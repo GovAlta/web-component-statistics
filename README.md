@@ -1,27 +1,57 @@
-# WebComponentArchitectureAngular
+# GovAlta/ui-components - Component statistics Documentation (Spike)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
-## Development server
+## Introduction 
+Currently, our team has no view into where, how, or how many of our components are being used in DDI products. This creates a large Blindspot and makes informed decision-making quite difficult. This information would be very valuable because it would allow us to focus our efforts in high-impact areas.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+We currently use the following tools to gather data:
+- Github
 
-## Code scaffolding
+## Investigation documentation 
+Target:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Explore the following options for tracking component usage:
 
-## Build
+- Run script on a product teams GitHub repo that identifies all instances of our components
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Install tracking components in a product team repo that sends data back to the design system team (need to connect with Application & Product security folks to figure out how to do this without violating policy).
 
-## Running unit tests
+- Other options?
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Data we would want to capture and report on
 
-## Running end-to-end tests
+- Which components are being used?
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    - React
 
-## Further help
+    - Angular
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    - Web components
+
+- Are the product templates in use?
+
+- What version of the libraries are in use? (Also want to check for old versions of libraries here)
+
+    - React
+
+    - Angular
+
+    - Vue
+
+- How many of each component are being used?
+
+- Design token usage
+
+**_**More experimental (nice to have) data**_**
+
+- What percentage of our components make up the total component usage for a product?
+
+- Rate of adoption change over time for all DS assets. (e.g. included 40 component instances last month and 85 this month)
+
+  - Month over month
+
+  - Quarter over quarter
+
+  - etc.
+
+Which component properties are being used for each component
